@@ -4,8 +4,8 @@ include "default/default_parameters.lua"
 params = deepcopy(DEFAULT_PARAMETERS)
 
 --ScanToScan ODOMETRY
-params.odometry.scan_processing.voxel_size = 0.05 --meters
-params.odometry.scan_processing.downsampling_ratio = 1.0
+params.odometry.scan_processing.voxel_size = 0.01 --meters
+params.odometry.scan_processing.downsampling_ratio = 0.5
 
 --Advanced Options.
 params.odometry.use_odometry_topic_instead_of_scan_to_scan = true --Uses Odometry topic instead of Scan2Scan registration.
